@@ -1,0 +1,43 @@
+
+#btn-blg {
+    
+    background-color: greenyellow;
+}
+
+
+.nav-class {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: lightyellow;
+}
+.donate{
+    display: flex;
+    gap: 5px;
+}
+.coin-amount{
+    display: flex;
+    gap: 5px;
+}
+.poro{
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+}
+.amount{
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+/*
+main section
+*/
+.dontaion-histry{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+#donation {
+    background-color: greenyellow;
+}
