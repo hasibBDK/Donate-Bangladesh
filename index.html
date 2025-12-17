@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="nav-class">
+    <header>
+        <nav class="nav-class">
       <button id="btn-blg" class="btn">Blog</button>
       <div class="donate">
         <img class="asset-logo" src="assets/logo.png" alt="" />
@@ -21,18 +22,21 @@
       </div>
       <div class="coin-amount">
         <img class="coin-image" src="assets/coin.png" alt="Coin Icon" />
-        <span class="amount">5000 BDT</span>
+        <span id="main-balance" class="amount">5000 BDT</span>
       </div>
+       
     </nav>
 
-    <main class="main-class">
-      <section class="dontaion-histry">
-        <div id="dnt-hstry" class="bg-white p-6">
+        <div id="dontaion-histry" class="bg-white p-6">
           <button id="donation" class="btn">Donation</button>
           <button class="btn">History</button>
         </div>
-      </section>
-      <div>
+    </header>
+    
+
+    <main>
+      
+      <div class="cards-container">
                 <div class="card">
                     <div class="card-image">
                     <img src="assets/noakhali.png" alt="Flood Relief" />
@@ -42,7 +46,7 @@
                     <div>
                         <div class="coin-donation">
                             <div><img src="assets/coin.png" alt=""></div>
-                            <div class="donate-amount">0 BDT</div>
+                            <div id="amount-donated" class="donate-amount">200 BDT</div>
                         </div>
                         
                         <div class="title">Donate for Flood at Noakhali, Bangladesh</div>
@@ -55,24 +59,25 @@
 
                     <div>
                         <input
+                        id="donation-amount"
                         type="number"
                         class="donation-input"
                         placeholder="Write Donation Amount"
                         />
-                        <button class="donate-btn">Donate Now</button>
+                        <button id="dontion-btn" class="donate-btn">Donate Now</button>
                     </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-image">
-                    <img src="assets/noakhali.png" alt="Flood Relief" />
+                    <img src="assets/feni.png" alt="Flood Relief" />
                     </div>
 
                     <div class="card-content">
                     <div>
                         <div class="coin-donation">
                             <div><img src="assets/coin.png" alt=""></div>
-                            <div class="donate-amount">0 BDT</div>
+                            <div id="amount-donated-feni" class="donate-amount">400 BDT</div>
                         </div>
                         
                         <div class="title">Donate for Flood at Noakhali, Bangladesh</div>
@@ -85,25 +90,26 @@
 
                     <div>
                         <input
+                        id="donation-amount-feni"
                         type="number"
                         class="donation-input"
                         placeholder="Write Donation Amount"
                         />
-                        <button class="donate-btn">Donate Now</button>
+                        <button id="dontion-btn-feni" class="donate-btn">Donate Now</button>
                     </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-image">
-                    <img src="assets/noakhali.png" alt="Flood Relief" />
+                    <img src="assets/quota-protest.png" alt="Flood Relief" />
                     </div>
 
                     <div class="card-content">
                     <div>
                         <div class="coin-donation">
                             <div><img src="assets/coin.png" alt=""></div>
-                            <div class="donate-amount">0 BDT</div>
+                            <div id="amount-donated-movement" class="donate-amount">600 BDT</div>
                         </div>
                         
                         <div class="title">Donate for Flood at Noakhali, Bangladesh</div>
@@ -116,11 +122,12 @@
 
                     <div>
                         <input
+                        id="donation-amount-movement"
                         type="number"
                         class="donation-input"
                         placeholder="Write Donation Amount"
                         />
-                        <button class="donate-btn">Donate Now</button>
+                        <button id="dontion-btn-movement" class="donate-btn">Donate Now</button>
                     </div>
                     </div>
                 </div>
@@ -129,5 +136,10 @@
       </div>
       
     </main>
+    <footer>
+        <div class="footer-content"></div>
+    </footer>
+    <script src="js/donation.js"></script>
+    <script src="js/function.js"></script>
   </body>
 </html>
