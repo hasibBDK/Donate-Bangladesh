@@ -158,5 +158,131 @@ main section
         background-color: lightyellow;
       }
       
+    .faq-title{
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-left:20px
+    }
+    .faq-item{
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        border:.5px solid gray;
+        padding: 10px;
+        width:50%;
+        margin-left:20px;
+    }
       
       
+
+    
+@media (max-width: 576px) {
+
+  
+  .nav-class {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .donate {
+    gap: 3px;
+  }
+
+  .asset-logo {
+    width: 25px;
+    height: 25px;
+  }
+
+  .coin-image {
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+  }
+
+  .poro {
+    font-size: 16px;
+  }
+
+  .amount {
+    width: auto;
+    font-size: 14px;
+  }
+
+  #dontaion-histry {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #donation,
+  #show-transiction-histry {
+    width: 80%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Cards adjustments */
+  .card {
+    flex-direction: column;
+    max-width: 95%;
+    margin: 10px auto;
+  }
+
+  .card-image {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .card-image img {
+    height: auto;
+  }
+
+  .card-content {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .donation-input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .donate-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .cards-container {
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  /* FAQ adjustments */
+  .faq-title {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .faq-item {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  /* Footer adjustments */
+  .footer-content {
+    height: 80px;
+  }
+}

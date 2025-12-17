@@ -14,12 +14,15 @@ document.getElementById('dontion-btn').addEventListener('click', function(event)
     }
     else{
         const newMainBalance = mainBalance - donationAmount;
-        amountDonatedNew = amountDonated + donationAmount;
+        const amountDonatedNew = amountDonated + donationAmount;
         document.getElementById('main-balance').innerText = newMainBalance + ' BDT';
         document.getElementById('amount-donated').innerText = amountDonatedNew + ' BDT';
 
     }
-   
+    const p = document.createElement('p');
+    p.innerText = `You have donated ${donationAmount} BDT. Thank you for your generosity!`;
+    document.getElementById('transiction-container').appendChild(p);
+    console.log('Donation successful!');
     
 });
 
@@ -41,12 +44,12 @@ document.getElementById('dontion-btn-feni').addEventListener('click', function(e
     }
     else{
         const newMainBalance = mainBalance - donationAmountfeni;
-        amountDonatedNewfeni = amountDonatedfeni + donationAmountfeni;
+        const amountDonatedNewfeni = amountDonatedfeni + donationAmountfeni;
         document.getElementById('main-balance').innerText = newMainBalance + ' BDT';
         document.getElementById('amount-donated-feni').innerText = amountDonatedNewfeni + ' BDT';
 
     }
-
+    
 
 
 });
@@ -68,9 +71,10 @@ document.getElementById('dontion-btn-movement').addEventListener('click', functi
     }
     else{
         const newMainBalance = mainBalance - donationAmountmovement;
-        amountDonatedNewmovement = amountDonatedmovement + donationAmountmovement;
+        const amountDonatedNewmovement = amountDonatedmovement + donationAmountmovement;
         document.getElementById('main-balance').innerText = newMainBalance + ' BDT';
         document.getElementById('amount-donated-movement').innerText = amountDonatedNewmovement + ' BDT';
     }
+   
 
     });
