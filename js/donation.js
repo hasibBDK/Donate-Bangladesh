@@ -19,10 +19,7 @@ document.getElementById('dontion-btn').addEventListener('click', function(event)
         document.getElementById('amount-donated').innerText = amountDonatedNew + ' BDT';
 
     }
-    const p = document.createElement('p');
-    p.innerText = `You have donated ${donationAmount} BDT. Thank you for your generosity!`;
-    document.getElementById('transiction-container').appendChild(p);
-    console.log('Donation successful!');
+    addToHistory('Flood Relief - Noakhali', donationAmount);
     
 });
 
@@ -51,7 +48,7 @@ document.getElementById('dontion-btn-feni').addEventListener('click', function(e
     }
     
 
-
+    addToHistory('Flood Relief - Feni', donationAmountfeni);
 });
 
 
@@ -75,6 +72,6 @@ document.getElementById('dontion-btn-movement').addEventListener('click', functi
         document.getElementById('main-balance').innerText = newMainBalance + ' BDT';
         document.getElementById('amount-donated-movement').innerText = amountDonatedNewmovement + ' BDT';
     }
-   
+   addToHistory('Quota Movement Support', donationAmountmovement);
 
-    });
+ });
